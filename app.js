@@ -15,6 +15,9 @@ console.log(userAge)
 if (isNaN(userAge)) {
     alert("per favore inserisci un età valida (scritta in numeri)");
     userAge = parseInt(prompt("inserisci la tua età (in numeri!)"));
+} else if (userAge < 0 || userAge > 115) {
+    alert("per favore inserisci un età valida! (o non sei nato o sei l'uomo più vecchio al mondo)");
+    userAge = parseInt(prompt("inserisci la tua età (in numeri!)"));
 }
 console.log(userAge)
 
@@ -30,6 +33,11 @@ if (userAge < 18) {        // sconto possibile: 20% per età < 18 anni
 }
 console.log(ticketPrice)
 
+// arrotondare il prezzo finale
+let finalTicketPrice = Math.round(ticketPrice * 100) / 100
+console.log(finalTicketPrice)
+
+
 // printare prezzo finale
-document.getElementById("ticket_price").innerHTML += ticketPrice;
+document.getElementById("ticket_price").innerHTML += finalTicketPrice;
 

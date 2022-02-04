@@ -39,5 +39,5 @@ console.log(finalTicketPrice)
 
 
 // printare prezzo finale
-document.getElementById("ticket_price").innerHTML += finalTicketPrice;
+document.getElementById("ticket_price").innerHTML += finalTicketPrice + "€";
 

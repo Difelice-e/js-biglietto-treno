@@ -1,9 +1,21 @@
 // Chiedere numero di chilometri 
-const kmNumber = prompt("inserisci il numero di kilometri del tuo viaggio");
+let kmNumber = prompt("inserisci il numero di kilometri del tuo viaggio");
+console.log(kmNumber)
+
+if (isNaN(kmNumber)) {
+    alert("per favore inserisci una distanza valida (scritta in numeri)");
+    kmNumber = prompt("inserisci il numero di kilometri del tuo viaggio (scritto in numeri!)");
+}
 console.log(kmNumber)
 
 // chiedere età (bonus:chiedere data di nascita)
-const userAge = parseInt(prompt("inserisci la tua età"));
+let userAge = parseInt(prompt("inserisci la tua età"));
+console.log(userAge)
+
+if (isNaN(userAge)) {
+    alert("per favore inserisci un età valida (scritta in numeri)");
+    userAge = parseInt(prompt("inserisci la tua età (in numeri!)"));
+}
 console.log(userAge)
 
 // prezzo del biglietto: km * 0.21€ 
